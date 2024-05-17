@@ -12,6 +12,8 @@ pip3 install mopidy-jellyfin mopidy-musicbox-webclient --break-system-packages
 cp mopidy.conf /etc/mopidy/mopidy.conf
 cp config.txt /boot/config.txt
 cp default.pa /etc/pulse/default.pa
+cp mopidy.service /lib/systemd/system/mopidy.service
+cp waitforjellyfin.sh /usr/local/bin/waitforjellyfin.sh
 
 systemctl enable mopidy
 
