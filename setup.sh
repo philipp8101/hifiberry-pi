@@ -15,5 +15,7 @@ cp default.pa /etc/pulse/default.pa
 
 systemctl enable mopidy
 
+su $(id -un 1000) pactl set-default-sink alsa_output.platform-soc_sound.stereo-fallback
+
 reboot
 
